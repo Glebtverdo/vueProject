@@ -38,7 +38,6 @@ const routes = [{
 export const router = new VueRouter({
     routes,
     scrollBehavior(to, from, savedPosition) {
-        console.log(to, from, savedPosition)
         if (to == from) {
             return { x: 0, y: 0 }
         }
